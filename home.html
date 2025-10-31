@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MetroBike Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="notification" class="ebike-notification" style="display:none;">
+        <span class="close-btn" onclick="closeNotification()">&times;</span>
+        <div>
+            <strong>Notification : E-Bike Rental</strong><br>
+            Your Ride is Ready!<br>
+            <br>
+            Your e-bike booking is confirmed. Get ready to explore the city with zero emissions and maximum
+            fun.<br>
+            <br>
+            Pickup Location: EcoStation<br>
+            Start Time: Today at 3:00 PM
+        </div>
+    </div>
+
+    <div class="d-flex align-items-center px-3 py-2" style="background:#e0e0e0;">
+        <div class="text-center me-4">
+            <img src="IMAGES/Frame 409.png" alt="Logo"
+                style="height:54px; width:54px; background:#fff; border-radius:50%; display:block; margin:auto;">
+            <div style="font-size:1.4rem; font-family:sans-serif; font-weight:500;">
+                Metro<span style="color:#44b36b; font-weight:700;">Bike</span>
+            </div>
+        </div>
+
+        <div class="flex-grow-1 d-flex justify-content-center align-items-center">
+            <div class="d-flex align-items-center"
+                style="width:450px; max-width:90%; background:#f8f8f8; border-radius:32px; padding:7px 20px;">
+                <input type="text" class="form-control border-0 bg-transparent shadow-none" style="font-size:1.2rem;"
+                    placeholder="Search">
+                <button class="btn p-0 ms-2" style="background:none;"><i class="fa fa-search fa-lg"></i></button>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center ms-4">
+
+            <a href="mountainbike.html"></a><button class="btn"><i class="bi bi-cart"></i></button>
+
+
+            <button class="btn" id="notifyBtn"><i class="bi bi-bell"></i></button>
+
+
+            <img src="IMAGES/Photo by Aatik Tasneem.png" alt="Profile"
+                style="height:48px; width:48px; border-radius:50%; margin-left:8px;">
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center mt-0" style="width:100%;">
+        <nav class="navbar navbar-expand-lg"
+            style="background:#46b36b; border-radius:0 0 12px 12px; min-width:300px; max-width:850px; width:70%;">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#metroNavbar"
+                aria-controls="metroNavbar" aria-expanded="false" aria-label="Toggle navigation"
+                style="background:#fff;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="metroNavbar">
+                <ul class="navbar-nav mx-auto py-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-4 active" style="font-size:1.13rem;" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-4" href="prices.html">Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-4" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-4" href="aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-4" href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <br>
+
+    <section class="rent-hero">
+        <div class="rent-left">
+            <img src="IMAGES/ather-energy-VJcqJqpdXMY-unsplash 1.png" alt="Electric Bike User" class="rent-profile">
+        </div>
+        <div class="rent-center">
+            <h1 class="rent-header"><span class="rent-green">Rent an</span> Electric Bike</h1>
+            <div class="rent-subtext">Explore the city with ease and convinnence</div>
+            <a href="prices.html"><button class="rent-btn">Get started</button></a>
+        </div>
+        <div class="rent-right">
+            <img src="IMAGES/image 1.png" alt="E-bike" class="rent-bike-img">
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <section class="best-ebikes">
+        <h1 class="bikes-header">Find the Best Ebikes</h1>
+        <div class="bikes-subtext">Browse through our selection of top-rated E-bikes Find the perfect ride for you needs
+        </div>
+        <a href="prices.html">
+            <div class="ebike-row">
+                <div class="ebike-card">
+                    <img src="IMAGES/amanz-vDtJgDeXK-o-unsplash 2.png" alt="Mountain E-Bike">
+                    <div class="ebike-label">Mountain E-Bikes</div>
+                    <div class="ebike-price">$ 7.00/hrs</div>
+                    <button class="ebike-btn">Rent now</button>
+                </div>
+                <div class="ebike-card">
+                    <img src="IMAGES/ather-energy-b_cHwAz_4k4-unsplash 1.png" alt="Mountain E-Bike">
+                    <div class="ebike-label">Mountain E-Bikes</div>
+                    <div class="ebike-price">$ 7.00/hrs</div>
+                    <button class="ebike-btn">Rent now</button>
+                </div>
+                <div class="ebike-card">
+                    <img src="IMAGES/ather-energy-LeavJNm2lFw-unsplash 2.png" alt="Compact E-Bike">
+                    <div class="ebike-label">Compact E-Bikes</div>
+                    <div class="ebike-price">$ 10.00/hrs</div>
+                    <button class="ebike-btn">Rent now</button>
+                </div>
+                <div class="ebike-card">
+                    <img src="IMAGES/ather-energy-VJcqJqpdXMY-unsplash 1.png" alt="Mountain E-Bike">
+                    <div class="ebike-label">Mountain E-Bikes</div>
+                    <div class="ebike-price">$ 7.00/hrs</div>
+                    <button class="ebike-btn">Rent now</button>
+                </div>
+                <div class="ebike-card">
+                    <img src="IMAGES/ather-energy-PoxO2O9mSW0-unsplash (1) 1.png" alt="City E-Bike">
+                    <div class="ebike-label">City E-Bikes</div>
+                    <div class="ebike-price">$ 5.00/hrs</div>
+                    <button class="ebike-btn">Rent now</button>
+                </div>
+            </div>
+        </a>
+    </section>
+    <br>
+    <br>
+
+    <section class="choose-metro">
+        <h1 class="choose-header">Why Choose Metro Bike ?</h1>
+        <div class="choose-icons-row">
+            <div class="choose-feature">
+                <i class="bi bi-leaf-fill"></i>
+
+                <div class="feature-label">Eco-Friendly travel</div>
+            </div>
+            <div class="choose-feature">
+                <i class="bi bi-recycle"></i>
+                <div class="feature-label">Affordable-Rates</div>
+            </div>
+            <div class="choose-feature">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div class="feature-label">App-Tracking</div>
+            </div>
+            <div class="choose-feature">
+                <i class="bi bi-headset"></i>
+                <div class="feature-label">24/7 Support</div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <section class="reviews-section">
+        <h1 class="reviews-header">Customers Reviews</h1>
+        <div class="reviews-row">
+            <div class="review-card">
+                <img src="IMAGES/Photo by H Liu.png" alt="Aman p." class="review-avatar">
+                <div class="review-name">Aman p.</div>
+                <div class="review-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="review-text">Great and excellent service</div>
+            </div>
+            <div class="review-card">
+                <img src="IMAGES/Photo by Lesly Juarez.png" alt="David.p" class="review-avatar">
+                <div class="review-name">David.p</div>
+                <div class="review-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="review-text">Great and excellent service</div>
+            </div>
+            <div class="review-card">
+                <img src="IMAGES/Photo by Patrick T'Kindt.png" alt="Gopi.p" class="review-avatar">
+                <div class="review-name">Gopi.p</div>
+                <div class="review-stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="review-text">Flexible Service</div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <section class="subscribe-section">
+        <h1 class="subscribe-header">Subscribe</h1>
+        <div class="subscribe-subtext">Get the latest deals & update straight to your inbox</div>
+        <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+    </section>
+    <br>
+    <br>
+
+    <footer class="footer-dark">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <img src="IMAGES/Frame 409.png" alt="MetroBike Logo" class="footer-logo">
+                <div class="footer-title">
+                    Metro<span class="green">Bike</span>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-heading">Aboutus</div>
+                <div class="footer-link">Our services</div>
+                <div class="footer-link">Contact</div>
+                <div class="footer-link">Terms & Conditions</div>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-heading">categories</div>
+                <div class="footer-link">Mountain Bikes</div>
+                <div class="footer-link">City Bikes</div>
+                <div class="footer-link">Compact Bikes</div>
+                <div class="footer-link">Ebike</div>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-heading"><i class="bi bi-telephone"></i> Contact us</div>
+                <div class="footer-link">(123) 8940-985498</div>
+                <div class="footer-link">Anyway USA 1234</div>
+                <div class="footer-link"><i class="bi bi-envelope"></i> Info@metrobike.com</div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                © 2025 Metro Ebike. All rights reserved.
+            </div>
+
+            <div class="footer-social-corner">
+                <span class="footer-social-label">Follow us :</span>
+                <span class="footer-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const notifyBtn = document.getElementById('notifyBtn');
+        const notification = document.getElementById('notification');
+        function closeNotification() {
+            notification.style.display = "none";
+        }
+        notifyBtn.onclick = function () {
+            notification.style.display = "flex";
+            setTimeout(() => notification.style.display = "none", 7000); // auto-dismiss after 7 seconds
+        };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
